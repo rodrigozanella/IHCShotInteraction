@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.jme3.gde.project.baselibs/1">
+    <module_version install_time="1378115321853" last="true" origin="installer" specification_version="3.0.0">
+        <file crc="762064723" name="config/Modules/com-jme3-gde-project-baselibs.xml"/>
+        <file crc="2137618756" name="libs/jME3-android.jar"/>
+        <file crc="2730448155" name="libs/jME3-blender.jar"/>
+        <file crc="825321315" name="libs/jME3-bullet.jar"/>
+        <file crc="1001705534" name="libs/jME3-core.jar"/>
+        <file crc="316414834" name="libs/jME3-desktop.jar"/>
+        <file crc="1596700574" name="libs/jME3-effects.jar"/>
+        <file crc="3017423483" name="libs/jME3-ios.jar"/>
+        <file crc="783739002" name="libs/jME3-jbullet.jar"/>
+        <file crc="1742315529" name="libs/jME3-jogg.jar"/>
+        <file crc="439035261" name="libs/jME3-jogl.jar"/>
+        <file crc="1587206411" name="libs/jME3-lwjgl.jar"/>
+        <file crc="977913244" name="libs/jME3-networking.jar"/>
+        <file crc="2273000576" name="libs/jME3-niftygui.jar"/>
+        <file crc="2687928268" name="libs/jME3-openal-soft-natives-android.jar"/>
+        <file crc="2632037513" name="libs/jME3-plugins.jar"/>
+        <file crc="527278777" name="libs/jME3-terrain.jar"/>
+        <file crc="794083820" name="libs/jMonkeyEngine3-javadoc.zip"/>
+        <file crc="4177109468" name="libs/jMonkeyEngine3-sources.zip"/>
+        <file crc="1688728961" name="modules/com-jme3-gde-project-baselibs.jar"/>
+    </module_version>
+</module>

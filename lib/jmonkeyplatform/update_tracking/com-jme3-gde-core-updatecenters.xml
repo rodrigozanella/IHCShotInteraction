@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.jme3.gde.core.updatecenters">
+    <module_version install_time="1378115317360" last="true" origin="installer" specification_version="3.0.0">
+        <file crc="15895403" name="config/Modules/com-jme3-gde-core-updatecenters.xml"/>
+        <file crc="2868243022" name="modules/com-jme3-gde-core-updatecenters.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="net.java.nboglpack.glsleditor">
+    <module_version install_time="1378115346099" last="true" origin="installer" specification_version="3.0.0">
+        <file crc="209849170" name="config/Modules/net-java-nboglpack-glsleditor.xml"/>
+        <file crc="542089331" name="modules/net-java-nboglpack-glsleditor.jar"/>
+    </module_version>
+</module>
