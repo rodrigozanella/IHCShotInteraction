@@ -24,6 +24,7 @@ public class MasterController {
     
     public MasterController(){
         aViewController = new ViewController();
+        aViewController.playScene(); // TODO : isso estará mais tarde no execute 
     }
     
     /**
