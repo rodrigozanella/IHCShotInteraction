@@ -1,5 +1,8 @@
 package Controller;
 
+import Controller.HardwareCommands.KeyboardGunButton;
+import Controller.HardwareCommands.KeyboardMoving;
+import Controller.HardwareCommands.MouseGunDirection;
 import Controller.HardwareInterface.GunButtons;
 import Controller.HardwareInterface.GunDirection;
 import Controller.HardwareInterface.Moving;
@@ -24,7 +27,9 @@ public class MasterController {
     
     public MasterController(){
         aViewController = new ViewController();
-        aViewController.playScene(); // TODO : isso estará mais tarde no execute 
+        aGunDirection = new MouseGunDirection();
+        aGunButtons = new KeyboardGunButton();
+        aMoving = new KeyboardMoving();
     }
     
     /**
@@ -32,7 +37,8 @@ public class MasterController {
      * @author Rodrigo Zanella Ribeiro
      */
     public void execute(){
-        
+        aViewController.playScene();
+        aViewController.nextScene();
     }
     
     

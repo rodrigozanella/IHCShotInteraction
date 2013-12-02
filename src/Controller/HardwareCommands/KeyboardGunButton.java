@@ -4,10 +4,12 @@
  */
 package Controller.HardwareCommands;
 
+import Controller.HardwareInterface.GunButtons;
+
 /**
  *
  * @author Zanella
  */
-public class KeyboardGunButton {
+public class KeyboardGunButton implements GunButtons{
     
 }
