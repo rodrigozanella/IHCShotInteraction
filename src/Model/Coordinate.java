@@ -9,7 +9,7 @@ public class Coordinate {
     private float y;
     private float z;
     
-    public Coordinate(float newX, float newY, float newZ){
+    public Coordinate(int newX, int newY, int newZ){
         x = newX;
         y = newY;
         z = newZ;

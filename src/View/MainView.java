@@ -20,7 +20,6 @@ import java.util.ArrayList;
 public class MainView extends ViewImpl{
     private ArrayList<BitmapText> buttons;
     private int state;
-    private boolean exit;
     @Override
     public void simpleInitApp() {
         buttons = new ArrayList<BitmapText>();

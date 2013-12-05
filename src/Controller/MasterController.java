@@ -1,8 +1,6 @@
 package Controller;
 
-import Controller.HardwareCommands.KeyboardGunButton;
-import Controller.HardwareCommands.KeyboardMoving;
-import Controller.HardwareCommands.MouseGunDirection;
+import Controller.HardwareCommands.MatMoving;
 import Controller.HardwareInterface.GunButtons;
 import Controller.HardwareInterface.GunDirection;
 import Controller.HardwareInterface.Moving;
@@ -26,10 +24,8 @@ public class MasterController {
      */
     
     public MasterController(){
-        aViewController = new ViewController();
-        aGunDirection = new MouseGunDirection();
-        aGunButtons = new KeyboardGunButton();
-        aMoving = new KeyboardMoving();
+        aViewController = new ViewController(this);
+        aMoving = new MatMoving();
     }
     
     /**
@@ -37,9 +33,40 @@ public class MasterController {
      * @author Rodrigo Zanella Ribeiro
      */
     public void execute(){
-        aViewController.playScene();
-        aViewController.nextScene();
+        boolean change = true; 
+        while(!aViewController.getNextScene().equalsIgnoreCase("exit")){
+            if(change){
+                aViewController.playScene();
+                change = false;
+            }
+            while(aViewController.isFinished() && change == false){
+                aViewController.nextScene();
+                change = true;
+            }
+        }
     }
     
-    
+    public GunDirection getaGunDirection() {
+        return aGunDirection;
+    }
+
+    public void setaGunDirection(GunDirection aGunDirection) {
+        this.aGunDirection = aGunDirection;
+    }
+
+    public GunButtons getaGunButtons() {
+        return aGunButtons;
+    }
+
+    public void setaGunButtons(GunButtons aGunButtons) {
+        this.aGunButtons = aGunButtons;
+    }
+
+    public Moving getaMoving() {
+        return aMoving;
+    }
+
+    public void setaMoving(Moving aMoving) {
+        this.aMoving = aMoving;
+    }
 }
